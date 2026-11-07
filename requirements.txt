@@ -1,0 +1,14 @@
+# Extração
+requests==2.34.2
+
+# Tratamento e análise
+pandas==3.1.1
+numpy==2.5.4
+
+# Visualização
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# Notebook
+jupyter==1.1.1
+ipykernel==7.4.0
