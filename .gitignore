@@ -1,19 +1,11 @@
 # Ambiente virtual
 .venv/
 
-# Python
+# Python / Jupyter
 __pycache__/
-*.py[cod]
-
-# Jupyter
 .ipynb_checkpoints/
-
-# Respostas brutas da API: regeneradas pela extração
-dados/brutos/*
-!dados/brutos/.gitkeep
 
 # Editor / sistema
 .vscode/
 .idea/
-.DS_Store
 Thumbs.db

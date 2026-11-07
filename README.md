@@ -18,11 +18,7 @@ jupyter notebook challenge.ipynb
 ## Estrutura
 
 ```
-├── challenge.ipynb   # notebook com a análise completa
-├── src/              # código de extração e tratamento
-├── dados/
-│   ├── brutos/       # respostas da API (não versionado)
-│   └── tratados/     # CSVs limpos usados na análise
-├── graficos/         # visualizações exportadas
-└── docs/             # documentação do processo
+├── challenge.ipynb    # extração, tratamento, análise e gráficos
+├── README.md          # documentação
+└── requirements.txt   # dependências
 ```
