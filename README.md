@@ -109,15 +109,11 @@ as filiações são redundantes: cada voto já informa o motivo da ausência e o
 - **Votos secretos não são individualizáveis.** Para as 72 indicações de autoridades, só o placar é
   conhecido; não há solução nos dados públicos.
 - **Composição dos blocos:** o mapa partido → bloco é o atual e supõe que ele não mudou ao longo de 2025.
-  *Sugestão:* usar o histórico de blocos, caso a API passe a oferecê-lo.
 - **Amostras pequenas em alguns cortes:** a coluna do Governo federal no mapa de calor reúne apenas 6
   votações abertas, e a maioria das propostas do Senado tem autores de vários blocos, o que impede
   comparar os blocos como autores.
 - **Interpretações políticas:** associar o Pelo Brasil ao governo e a Vanguarda à oposição usa contexto
   externo aos dados; os textos do notebook sinalizam esses trechos.
-- *Sugestões de extensão:* ampliar para a legislatura inteira (2023–2026), guardar as respostas brutas da
-  API para não depender dela a cada execução, e comparar o comportamento dos blocos com o da Câmara dos
-  Deputados.
 
 ## Processo de desenvolvimento
 
@@ -128,20 +124,18 @@ de seguir para a próxima:
    antes de escrever o código.
 2. **Planejamento:** escolha da pergunta ("como o Senado vota?"), do recorte (2025) e dos dados; a análise
    por grupo de autoria nasceu da pergunta "como votam os senadores nas propostas de outros grupos?".
-3. **Estrutura enxuta:** a primeira versão tinha pastas separadas para código, dados e gráficos; foi
-   simplificada para notebook, README e requirements.
-4. **Cliente da API e extração**, com tratamento de erros e testes dos casos de borda.
-5. **Tratamento:** o pipeline genérico de limpeza foi adaptado de um código de limpeza próprio, generalizado
+3. **Cliente da API e extração**, com tratamento de erros e testes dos casos de borda.
+4. **Tratamento:** o pipeline genérico de limpeza foi adaptado de um código de limpeza próprio, generalizado
    para funcionar em qualquer tabela.
-6. **Simplificação:** revisão do código para eliminar repetições, com comparação das tabelas antes e depois
+5. **Simplificação:** revisão do código para eliminar repetições, com comparação das tabelas antes e depois
    para garantir o mesmo resultado.
-7. **Visualizações:** paleta validada para daltonismo e conferência visual de cada gráfico.
-8. **Interpretação:** os textos de cada gráfico foram escritos a partir de números conferidos nos dados. Foi
+6. **Visualizações:** paleta validada para daltonismo e conferência visual de cada gráfico.
+7. **Interpretação:** os textos de cada gráfico foram escritos a partir de números conferidos nos dados. Foi
    nessa conferência que surgiram as votações duplicadas e os casos em que o rejeitado era uma emenda ou
    um pedido de urgência, e não a proposta.
 
-As decisões de escopo, estrutura e redação foram do autor. O assistente foi usado para explorar a API,
-escrever e revisar código e conferir números.
+O assistente AI foi usado para explorar a API,
+escrever código (antes da revisão) e conferir números.
 
 ## Tecnologias
 
